@@ -26,6 +26,13 @@
 		134814201AA4EA6300B7C361 /* libRNGenieWifiModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGenieWifiModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNGenieWifiModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGenieWifiModule.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNGenieWifiModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGenieWifiModule.m; sourceTree = "<group>"; };
+		FAD5744320F493190021AAA6 /* GenieForTaobao */ = {isa = PBXFileReference; path = GenieForTaobao; sourceTree = "<group>"; };
+		FAD5744420F493190021AAA6 /* SoundLinkForTaobao.h */ = {isa = PBXFileReference; path = SoundLinkForTaobao.h; sourceTree = "<group>"; };
+		FAD5744520F493190021AAA6 /* WifiLinkForTaobao.h */ = {isa = PBXFileReference; path = WifiLinkForTaobao.h; sourceTree = "<group>"; };
+		FAD5744620F493190021AAA6 /* GenieForTaobao.h */ = {isa = PBXFileReference; path = GenieForTaobao.h; sourceTree = "<group>"; };
+		FAD5744720F493190021AAA6 /* DALinkProtocol.h */ = {isa = PBXFileReference; path = DALinkProtocol.h; sourceTree = "<group>"; };
+		FAD5744920F493190021AAA6 /* module.modulemap */ = {isa = PBXFileReference; path = module.modulemap; sourceTree = "<group>"; };
+		FAD5744B20F493190021AAA6 /* Info.plist */ = {isa = PBXFileReference; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,11 +57,51 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				FAD5744D20F493190021AAA6 /* Frameworks */,
 				B3E7B5881CC2AC0600A0062D /* RNGenieWifiModule.h */,
 				B3E7B5891CC2AC0600A0062D /* RNGenieWifiModule.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
+		};
+		FAD5744820F493190021AAA6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5744420F493190021AAA6 /* SoundLinkForTaobao.h */,
+				FAD5744520F493190021AAA6 /* WifiLinkForTaobao.h */,
+				FAD5744620F493190021AAA6 /* GenieForTaobao.h */,
+				FAD5744720F493190021AAA6 /* DALinkProtocol.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		FAD5744A20F493190021AAA6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5744920F493190021AAA6 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAD5744C20F493190021AAA6 /* GenieForTaobao.framework */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5744320F493190021AAA6 /* GenieForTaobao */,
+				FAD5744820F493190021AAA6 /* Headers */,
+				FAD5744A20F493190021AAA6 /* Modules */,
+				FAD5744B20F493190021AAA6 /* Info.plist */,
+			);
+			path = GenieForTaobao.framework;
+			sourceTree = "<group>";
+		};
+		FAD5744D20F493190021AAA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5744C20F493190021AAA6 /* GenieForTaobao.framework */,
+			);
+			name = Frameworks;
+			path = "/Users/alex/Code/explore/react-native/genie-wifi-module/ios/Frameworks";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -204,7 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
