@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license        = package['license']
   s.author         = package['author']
   s.homepage       = package['homepage']
-  s.source         = { :git => 'git@github.com:zousandian/react-native-genie-wifi-module.git', :tag => s.version }
+  s.source         = { :git => 'https://github.comm/zousandian/react-native-genie-wifi-module', :tag => s.version }
 
   s.platform       = :ios, '8.0'
 

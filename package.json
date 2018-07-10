@@ -3,6 +3,7 @@
   "name": "react-native-genie-wifi-module",
   "version": "1.0.0",
   "description": "react native genie wifi module",
+  "homepage": "https://github.com/zousandian/react-native-genie-wifi-module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
