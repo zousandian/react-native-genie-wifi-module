@@ -1,6 +1,6 @@
 
 #import "RNGenieWifiModule.h"
-#import <GenieForTaobao/GenieForTaobao.h>
+#import <ALGLinkSDK/ALGLinkSDK.h>
 
 @implementation RNGenieWifiModule
 
@@ -20,15 +20,15 @@ RCT_EXPORT_METHOD(linkWithSSID:(NSString *)ssid
   NSLog(@"=useid===%@", userId);
   NSLog(@"=token===%@", token);
   
-  [[WifiLinkForTaobao sharedInstance] linkWithSSID:ssid password:password userId:userId token:token];
-  [[SoundLinkForTaobao sharedInstance] linkWithSSID:ssid password:password userId:userId token:token];
+  [[ALGLinkSmartConfig sharedInstance] linkWithSSID:ssid password:password userId:userId token:token callback:nil];
+  [[ALGLinkSoundConfig sharedInstance] linkWithSSID:ssid password:password userId:userId token:token callback:nil];
 }
 
 RCT_EXPORT_METHOD(stopLink)
 {
   dispatch_async(dispatch_get_global_queue(0, 0), ^{
-    [[WifiLinkForTaobao sharedInstance] stopLink];
-    [[SoundLinkForTaobao sharedInstance] stopLink];
+    [[ALGLinkSmartConfig sharedInstance] stopLink]; 
+    [[ALGLinkSoundConfig sharedInstance] stopLink];
   });
 }
 

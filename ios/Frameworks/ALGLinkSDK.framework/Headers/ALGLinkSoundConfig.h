@@ -6,10 +6,10 @@
 //  Copyright © 2016年 alibaba. All rights reserved.
 //
 
-#import "DALinkProtocol.h"
+#import "ALGLinkProtocol.h"
 
-@interface SoundLinkForTaobao : NSObject<DALinkProtocol>
+@interface ALGLinkSoundConfig : NSObject<ALGLinkProtocol>
 
-+ (SoundLinkForTaobao *)sharedInstance;
++ (instancetype)sharedInstance;
 
 @end

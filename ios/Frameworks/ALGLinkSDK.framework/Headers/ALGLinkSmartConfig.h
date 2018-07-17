@@ -6,10 +6,10 @@
 //  Copyright © 2016年 alibaba. All rights reserved.
 //
 
-#import "DALinkProtocol.h"
+#import "ALGLinkProtocol.h"
 
-@interface WifiLinkForTaobao : NSObject <DALinkProtocol> 
+@interface ALGLinkSmartConfig : NSObject <ALGLinkProtocol>
 
-+ (WifiLinkForTaobao *)sharedInstance;
++ (instancetype)sharedInstance;
 
 @end

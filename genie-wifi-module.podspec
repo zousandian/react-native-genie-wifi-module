@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
   s.source_files   = 'ios/*.{h,m}'
-  s.ios.vendored_frameworks = "ios/Frameworks/GenieForTaobao.framework"
+  s.ios.vendored_frameworks = "ios/Frameworks/ALGLinkSDK.framework"
 
   s.dependency 'React'
+  s.dependency 'CocoaAsyncSocket', '~> 7.4.3'
 end
